@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html><head>
+    <title>Grill and Thrill!</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Bentham&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Delius+Swash+Caps&family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+</head>
+    <header id="header" >
+        <h1 style="padding: 0px; margin-left: 35px; color: white; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">GRILL AND THRILL</h1>
+
+        <nav id="nav">
+            <ul id="list">
+                <li onclick="scrolltohome()">Home</li>
+                <li onclick="scrolltoabout()">About</li>
+                <li onclick="scrolltomenu()">Menu</li>
+                <li onclick="scrolltospecials()">Specials</li>
+                <li onclick="scrolltoreviews()">Reviews</li>
+               <li onclick="scrolltocontact()">Contact</li>
+               <li id="button" onclick="scrolltobooktable()">Book a Table</li>
+            </ul>
+        </nav>
+    </header>
+    <section class="home"></section>
+    <body>
+        <div class="row">
+            <div class="divv">
+                <h1 style="margin-left: 100px;letter-spacing: 3px; text-shadow: 7px 7px 5px white; font-family:Chakra Petch; font-size: 250%; color: black;">Welcome to Grill and Thrill</h1>
+                <h2 style="margin-left: 250px; text-shadow: 3px 3px 5px white ;font-size:170% ; color: black; font-family: Chakra Petch;"> - Where Flavour meets Fun!</h2>
+                <div class="button">
+                    
+                <li class="button2">BOOK A TABLE</li>
+                </div>
+            </div>
+        </div>
+    
+    <section class="about" id="about">
+        <div class="aboutus">
+            <h1 style="text-align: center; font-family: Atma, serif; font-size: 2.5rem; color: #f8c97b; text-shadow: 1px 1px 5px #000;">ABOUT US</h1>
+            <h2 style="font-family: Karla; font-size: 160%;" >Welcome to <span style="color: #cda45e;">Grill and Thrill</span>, your go-to destination for mouth-watering grilled dishes in Chennai.</h2>
+            <h2 style="font-family: Bentham; font-size:135%;">✅We specialize in juicy steaks, tender chicken, and fresh vegetables, all grilled to perfection. <br><br>
+                ✅Our chefs use the finest ingredients and traditional grilling techniques to bring you a flavorful experience.<br><br>
+
+                ✅Located in the heart of Chennai, we offer a cozy atmosphere for family and friends to enjoy great food together.<br><br>
+
+                ✅Whether you're a spice lover or prefer mild flavors, our diverse menu has something for everyone.<br><br>
+            </h2>
+        </div>
+        <div class="aboutimg">
+            <img src="albert-YYZU0Lo1uXE-unsplash.jpg" alt="About us">
+        </div>
+
+    </section>
+    <section id="menu" class="menu">
+        <div class="menu-category">
+            <h3 class="menu-title" onclick="openmenu('starters')">Starters</h3>
+            <div class="menu-items" id="starters">
+                <div class="menu-item">
+                    <h4>Chicken Tikka (Boneless)</h4>
+                    <p>Tender pieces of chicken marinated in yogurt, spices, and grilled to perfection.</p>
+                    <span class="price">₹250</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Paneer Tikka (Vegetarian)</h4>
+                    <p>Grilled paneer marinated with spices and served with mint chutney.</p>
+                    <span class="price">₹220</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Grilled Fish (Salmon)</h4>
+                    <p>Fresh salmon marinated with aromatic herbs and grilled.</p>
+                    <span class="price">₹350</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Veg Seekh Kebab</h4>
+                    <p>Grilled vegetable kebabs with a hint of spices.</p>
+                    <span class="price">₹180</span>
+                </div>
+                <div class="menu-item">
+                    <h4>BBQ Chicken Wings</h4>
+                    <p>Spicy, smoky grilled chicken wings served with a tangy barbecue sauce.</p>
+                    <span class="price">₹290</span>
+                </div>
+            </div>
+        </div>
+    
+        <div class="menu-category">
+            <h3 class="menu-title" onclick="openmenu('main-course')">Main Course</h3>
+            <div class="menu-items" id="main-course">
+                <div class="menu-item">
+                    <h4>Grilled Chicken Steak (Boneless)</h4>
+                    <p>Juicy grilled chicken steak served with mashed potatoes and vegetables.</p>
+                    <span class="price">₹450</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Paneer Shashlik</h4>
+                    <p>Grilled paneer with bell peppers and onions, served with a special sauce.</p>
+                    <span class="price">₹320</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Sizzling Grilled Fish</h4>
+                    <p>A platter of perfectly grilled fish served on a hot sizzling plate.</p>
+                    <span class="price">₹500</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Mixed Grill Platter</h4>
+                    <p>A combination of grilled chicken, fish, and vegetables served with naan and rice.</p>
+                    <span class="price">₹600</span>
+                </div>
+                <div class="menu-item">
+                    <h4>BBQ Lamb Chops</h4>
+                    <p>Tender lamb chops grilled to perfection with a smoky barbecue glaze.</p>
+                    <span class="price">₹650</span>
+                </div>
+            </div>
+        </div>
+    
+  
+        <div class="menu-category">
+            <h3 class="menu-title" onclick="openmenu('desserts')">Desserts</h3>
+            <div class="menu-items" id="desserts">
+                <div class="menu-item">
+                    <h4>Chocolate Lava Cake</h4>
+                    <p>Warm chocolate cake with molten chocolate inside, served with vanilla ice cream.</p>
+                    <span class="price">₹180</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Gulab Jamun</h4>
+                    <p>Traditional Indian dessert made of deep-fried dough balls soaked in sugar syrup.</p>
+                    <span class="price">₹120</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Kulfi (Mango/Pistachio)</h4>
+                    <p>Creamy Indian ice cream in mango or pistachio flavor.</p>
+                    <span class="price">₹150</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="specials" id="specials">
+        <div class="special">
+            <h1 style="text-align: center; font-family: Atma, serif; font-size: 2.5rem; color: #f8c97b; text-shadow: 1px 1px 5px #000;">SPECIALS</h1>
+        </div>
+        <div class="special-items">
+            <div class="special-item">
+                <h4>Grill & Thrill Mixed Platter</h4>
+                <p>Tandoori Chicken, Paneer Tikka, Seekh Kebabs, Grilled Corn</p>
+                <span class="price">₹850</span>
+            </div>
+            <div class="special-item">
+                <h4>Spicy Coastal Seafood Platter</h4>
+                <p>Grilled Prawns, Masala Fish Tikka, Tandoori Crab, Coconut Rice</p>
+                <span class="price">₹1,200</span>
+            </div>
+            <div class="special-item">
+                <h4>Mughlai Royal Platter</h4>
+                <p>Mutton Seekh Kebabs, Grilled Lamb Chops, Tandoori Paneer, Biriyani Pulao</p>
+                <span class="price">₹1,000</span>
+            </div>
+            <div class="special-item">
+                <h4>Vegetarian Supreme Grill Platter</h4>
+                <p>Malai Broccoli, Paneer Tikka, Tandoori Mushrooms, Corn Seekh Kebabs</p>
+                <span class="price">₹750</span>
+            </div>
+            <div class="special-item">
+                <h4>Indian BBQ & Grill Feast</h4>
+                <p>Tandoori Chicken, Mutton Shami Kebab, Grilled Bhutte, Naan</p>
+                <span class="price">₹950</span>
+            </div>
+        </div>
+    </section>
+    <section class="reviews" id="reviews">
+        <div class="review-header">
+            <h1 style="text-align: center; font-family: Atma, serif; font-size: 2.5rem; color: #f8c97b; text-shadow: 1px 1px 5px #000;">REVIEWS</h1>
+        </div>
+        <div class="review-message">
+            <h2 style="font-family: Karla, sans-serif; color: #fff; font-size: 1.6rem; text-transform: uppercase;">No reviews yet! Be the first to share your experience.</h2>
+            <p style="font-family: Bentham, serif; color: #ddd; font-size: 1.2rem; line-height: 1.6;">We’d love to hear your thoughts! Share your feedback and help others discover the best experience in town. <br><br> Don't forget to tell us what you loved most about Grill & Thrill!</p>
+            <a href="#" class="review-button">Leave a Review</a>
+        </div>
+    </section>
+    <section class="book-table">
+        <div class="table-booking">
+            <h1 style="text-align: center; font-family: Atma, serif; font-size: 2.5rem; color: #f8c97b; text-shadow: 1px 1px 5px #000;">BOOK A TABLE</h1>
+        </div>
+        <div class="bookingform">
+            <form class="form"> 
+                <div class="row1">
+                    <input type="text" placeholder="Enter your Name" required>
+                    <input type="tel" placeholder="Your Mobile " required>
+                    <input type="email" placeholder="Your Email">
+                </div>
+                <div class="row1">
+                    <input type="text" placeholder="Date of Visit" required>
+                    <input type="text" placeholder="Time of Visit" required>
+                    <input type="number"placeholder="Number of Person" required>
+                </div>
+                <div class="row1">
+                    <input id="message" text placeholder="Any Other Needs!!">
+                </div>
+                <li class="button2" style="margin-left: 629px; color: white;" >BOOK A TABLE</li>
+            </form>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="contact-header">
+            <h1 style="text-align: center; font-family: Atma, serif; font-size: 2.5rem; color: #f8c97b; text-shadow: 1px 1px 5px #000;">CONTACT US</h1>
+        </div>
+        
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3>Our Address:</h3>
+                    <p>123 Grill Street, Chennai, India</p>
+                </div>
+                <div class="contact-item">
+                    <h3>Email:</h3>
+                    <p>contact@grillandthrill.com</p>
+                </div>
+                <div class="contact-item">
+                    <h3>Phone:</h3>
+                    <p>+91 123 456 7890</p>
+                </div>
+                <div class="contact-item">
+                    <h3>Opening Hours:</h3>
+                    <p>Mon - Fri: 11:00 AM - 11:00 PM</p>
+                    <p>Sat - Sun: 10:00 AM - 12:00 AM</p>
+                </div>
+            </div>
+    
+            <div class="contact-form">
+                <form class="form">
+                    <div class="row1">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="row1">
+                        <input type="tel" placeholder="Your Phone Number" required>
+                        <input type="text" placeholder="Subject" required>
+                    </div>
+                    <div class="row1">
+                        <textarea id="message" placeholder="Your Message" required></textarea>
+                    </div>
+                    <div class="submit-btn">
+                        <li class="button2" style="color: white; text-align: center;">SEND MESSAGE</li>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>   
+    <script src="index.js"></script>
+</body>
+</html>
